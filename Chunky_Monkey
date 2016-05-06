@@ -1,0 +1,35 @@
+Javascript
+
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  
+  var arrOut = [];
+  var arrTmp = [];
+  var arrLun = arr.length;
+  var i = 0;
+  var j=0;
+  var elem = 0;
+  while(i<arrLun){
+    if(j<size){
+      arrTmp.push(arr[i]);
+      j++;
+    } else {
+      j = 1;
+      arrOut.push(arrTmp);
+      arrTmp = [];
+      arrTmp.push(arr[i]);
+    }
+    if(i==(arrLun-1)){
+      arrOut.push(arrTmp);
+      i++; 
+    } else {
+      i++;    
+    }    
+  }
+  
+  return arrOut;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+Lodash

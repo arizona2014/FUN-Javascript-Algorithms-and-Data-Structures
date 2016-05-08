@@ -1,0 +1,28 @@
+Javascript
+
+function rot13(str) { // LBH QVQ VG!
+  
+  var upperStr = str.toUpperCase(); 
+  var crackedStr = "";
+  var decodedChar;
+  for(i=0;i<upperStr.length;i++){
+    if(upperStr[i].charCodeAt(0) >= 65 && upperStr[i].charCodeAt(0) <= 90){
+      if(upperStr[i].charCodeAt(0) <=77){
+        decodedChar = upperStr[i].charCodeAt(0) + 13;
+      } else {
+        decodedChar = (( upperStr[i].charCodeAt(0) + 13 ) - 90 ) + 64;
+      }
+      crackedStr += String.fromCharCode(decodedChar);
+    } else {
+      crackedStr += upperStr[i];
+    }
+  }
+  
+  
+  return crackedStr;
+}
+
+// Change the inputs below to test
+rot13("SERR CVMMN!");
+
+Lodash

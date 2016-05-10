@@ -1,0 +1,29 @@
+Javascript
+
+function difference1(value){  
+    if(ar2.indexOf(value) === -1)
+      return value;  
+}
+
+function difference2(value){  
+    if(ar1.indexOf(value) === -1)
+      return value;  
+}
+
+function diffArray(arr1, arr2) {
+  ar1 = arr1;
+  ar2 = arr2;
+  var newArr = [];
+  var tmpArr = [];
+  newArr = arr1.filter(difference1);
+  tmpArr = arr2.filter(difference2);
+  if(tmpArr.length>0)
+  	newArr = newArr.concat(tmpArr);
+  // Same, same; but different.
+  return newArr;
+}
+var ar1 = [];
+var ar2 = [];
+diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);
+ 
+Lodash

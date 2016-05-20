@@ -1,5 +1,4 @@
-<script>
-
+Javascript
 
 //Setup
 var contacts = [
@@ -58,4 +57,4 @@ function lookUpProfile(firstName, prop){
 lookUpProfile("Harry","likes");
 
 
-</script>
+Lodash

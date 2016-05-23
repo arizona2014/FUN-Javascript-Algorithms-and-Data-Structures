@@ -1,0 +1,19 @@
+Javascript
+
+function sumFibs(num) {  
+    var a = 0, b = 1, 
+    var sum = 0;
+    while(b<=num){
+        if(b%2 !== 0) 
+          sum += b;
+        var c = b + a;
+        a = b;
+        b = c;
+    } 
+  return sum;
+}
+
+sumFibs(4);
+
+
+Lodash

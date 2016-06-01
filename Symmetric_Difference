@@ -1,0 +1,27 @@
+Javascript
+
+function sym() {
+
+  var args = Array.prototype.slice.call(arguments);
+  var getDifference = function(arr1, arr2) {
+    
+    function filterMe(arr1, arr2) {
+      return arr1.filter(function(item) {
+        return arr2.indexOf(item) === -1;
+      });
+    }
+
+    return filterMe(arr1, arr2)
+      .concat(filterMe(arr2, arr1));
+  };
+
+  var symarray = args.reduce(getDifference, []);
+  var unic = symarray.filter(function(elem, index, self) {
+    return index === self.indexOf(elem);
+    });
+  return unic;
+}
+
+sym([1, 2, 3], [5, 2, 1, 4]);
+
+Lodash

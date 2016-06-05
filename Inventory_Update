@@ -1,0 +1,43 @@
+Javascript
+
+function inventory(arr1, arr2) {
+  return arr2.reduce(update,arr1.reduce(update,{})).toArray().sort(invSort);
+}
+
+function update(acc,e){
+  var ans=acc;
+  if (ans[e[1]]===undefined) ans[e[1]]=e[0];
+  else ans[e[1]]+=e[0];
+  return ans;
+}
+
+Object.prototype.toArray = function(){
+  var ans=[];
+  for (var key in this){
+    ans.push([this[key],key]);
+  }
+  return ans.slice(0,-1);
+};
+
+function invSort(a,b){
+  if (a[1]<b[1]) return -1;
+  if (a[1]===b[1]) return 0;
+  return 1;
+}
+
+// Example inventory lists
+var curInv = [
+    [21, 'Bowling Ball'],
+    [2, 'Dirty Sock'],
+    [1, 'Hair Pin'],
+    [5, 'Microphone']
+];
+
+var newInv = [
+    [2, 'Hair Pin'],
+    [3, 'Half-Eaten Apple'],
+    [67, 'Bowling Ball'],
+    [7, 'Toothpaste']
+];
+
+inventory(curInv, newInv);

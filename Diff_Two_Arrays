@@ -1,5 +1,3 @@
-Javascript
-
 function difference1(value){  
     if(ar2.indexOf(value) === -1)
       return value;  
@@ -25,5 +23,3 @@ function diffArray(arr1, arr2) {
 var ar1 = [];
 var ar2 = [];
 diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]);
- 
-Lodash

@@ -1,5 +1,3 @@
-Javascript
-
 function chunkArrayInGroups(arr, size) {
   // Break it up.
   
@@ -31,5 +29,3 @@ function chunkArrayInGroups(arr, size) {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
-
-Lodash

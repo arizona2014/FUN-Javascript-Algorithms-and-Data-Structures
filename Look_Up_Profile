@@ -1,6 +1,3 @@
-Javascript
-
-//Setup
 var contacts = [
     {
         "firstName": "Akira",
@@ -30,7 +27,6 @@ var contacts = [
 
 
 function lookUpProfile(firstName, prop){
-// Only change code below this line
   var ret = 0;
   for (var key in contacts) {
     if ( contacts[key].firstName === firstName) {
@@ -49,12 +45,7 @@ function lookUpProfile(firstName, prop){
 	  case 1:
 	     return "No such property";
 	}
-  
-// Only change code above this line
+
 }
 
-// Change these values to test your function
 lookUpProfile("Harry","likes");
-
-
-Lodash

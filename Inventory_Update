@@ -1,5 +1,3 @@
-Javascript
-
 function inventory(arr1, arr2) {
   return arr2.reduce(update,arr1.reduce(update,{})).toArray().sort(invSort);
 }
@@ -25,7 +23,6 @@ function invSort(a,b){
   return 1;
 }
 
-// Example inventory lists
 var curInv = [
     [21, 'Bowling Ball'],
     [2, 'Dirty Sock'],

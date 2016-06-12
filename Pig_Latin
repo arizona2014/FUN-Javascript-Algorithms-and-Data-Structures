@@ -1,6 +1,3 @@
-Javascript
-
-
 function translatePigLatin(str) {
      str=str.toLowerCase();
      var n =str.search(/[aeiuo]/);
@@ -17,6 +14,3 @@ function translatePigLatin(str) {
 }
 
 translatePigLatin("consonant");
-
-
-Lodash

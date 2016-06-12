@@ -1,5 +1,3 @@
-Javascript
-
 function convertToRoman(num) {
     var digits = String(+num).split(""),
         key = ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
@@ -13,5 +11,3 @@ function convertToRoman(num) {
 }
 
 convertToRoman(36);
-
-Lodash

@@ -1,5 +1,3 @@
-Javascript
-
 function sumFibs(num) {  
     var a = 0, b = 1, 
     var sum = 0;
@@ -14,6 +12,3 @@ function sumFibs(num) {
 }
 
 sumFibs(4);
-
-
-Lodash

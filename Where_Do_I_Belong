@@ -1,5 +1,3 @@
-Javascript
-
 function getIndexToIns(arr, num) {
 
   // Find my place in this sorted array.
@@ -34,6 +32,4 @@ function getIndexToIns(arr, num) {
 }
 
 getIndexToIns([3, 10, 5], 3);
-
-Lodash
 

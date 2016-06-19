@@ -1,5 +1,3 @@
-Javascript
-
 function whereAreYou(collection, source) {
   // What's in a name?
   var arr = [];
@@ -25,5 +23,3 @@ function whereAreYou(collection, source) {
 }
 
 whereAreYou([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
- 
-Lodash
